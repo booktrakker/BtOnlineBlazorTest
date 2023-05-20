@@ -1,0 +1,101 @@
+﻿@page "/errorviewer"
+@implements IDisposable
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Mvc;
+@using Microsoft.EntityFrameworkCore
+@using C1.Blazor.Grid
+@using C1.DataCollection.EntityFrameworkCore
+@using BTOnlineBlazor
+@using BTOnlineBlazor.Data
+@using BTOnlineBlazor.Models
+@using BTOnlineBlazor.App_Code
+@using BTOnlineBlazor.Services
+@using System.Diagnostics;
+@using BTOnlineBlazor.Models.Db
+@inject IDbContextFactory<BtDbContext> _dbContextFactory
+
+
+
+@inject ErrorReporterService errReport;
+@*@using FlexGridColumnReorder.Data*@
+
+<PageTitle>Error Log Viewer</PageTitle>
+
+
+<h1>ErrorLogViewer</h1>
+
+@if(ErrorLog == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if(DbIsPresent)
+{
+    <FlexGrid ItemsSource="ErrorLog"></FlexGrid> 
+}
+else
+{
+    <p><em>Cannot connect to database - ConnectionString = @ConnectionString</em></p>
+}
+
+@code {
+    //private  using BtDbContext _context = _dbContextFactory.CreateDbContext();
+
+    protected bool DbIsPresent = false;
+
+    ErrorLog[] ErrorLog = null!;
+
+    ErrorList errorViewer;
+
+    protected string ConnectionString = "";
+
+    //private ErrorReporterService errReport;
+
+    public ErrorViewer()
+    {        
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //mBusy = true;
+
+        try
+        {
+            errorViewer = new ErrorList(errReport, _dbContextFactory);
+            ErrorLog = errorViewer.ErrorLogs;
+
+            using BtDbContext _context = _dbContextFactory.CreateDbContext();
+
+            DbIsPresent = _context.Database.CanConnect();
+
+            ConnectionString = _context.Database.GetConnectionString() ?? "";
+
+            if (DbIsPresent &&  _context is not null && _context.ErrorLogs is not null)
+            {
+                var errorLog = await _context.ErrorLogs.Where(e=>e.TimeStamp > DateTime.Now.AddDays(-7)).ToListAsync();
+
+                if (errorLog is not null)
+                {
+                    //ErrorLog = new C1EntityFrameworkCoreVirtualDataCollection<ErrorLog>(_context);
+                    ErrorLog = errorLog.ToArray();
+                }
+            }
+            else
+            {
+
+            }
+
+        }
+        finally
+        {
+            //mBusy = false;
+        }
+
+        await base.OnInitializedAsync();
+    }
+
+    public void Dispose()
+    {
+        
+    }
+
+}

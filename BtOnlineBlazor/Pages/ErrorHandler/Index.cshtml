@@ -1,0 +1,84 @@
+﻿@page
+@model BTOnlineBlazor.Pages.ErrorHandler.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].AppName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].InnerException)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].StackTrace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].TargetSite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].FileName)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.ErrorLog[0].TimeStamp)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ErrorLog) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InnerException)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StackTrace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TargetSite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileName)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.TimeStamp)
+            </td>*@
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ErrorId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ErrorId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ErrorId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

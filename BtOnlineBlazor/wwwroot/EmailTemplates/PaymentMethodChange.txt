@@ -1,0 +1,39 @@
+﻿Dear [Name],
+
+Amazon has designed and released a simplified payments process that enables users to both setup their subscriptions and change/update cards all in the same operation. 
+
+This is available now, and the older system has stopped working altogether. In order to process your subscription using the new system you need to update App Manager and then resubscribe to BookTrakker through App Manager.
+
+Please do this now. Since the old system no longer works if you do not update to the new payments process your subscription will expire 14 days after your Renew Date.  We will send this email every 5 days to remind you to switch to the new payments system.
+
+To update App Manager/BT Utilities and initiate your subscription payment please do the following:
+
+1. Please open App Manager, if it does not automatically update then click the blue button, then Download/Install. Update App manager, then repeat for BT Utilities. 
+
+2. If the install is successful skip step 3 and do step 4, below. Otherwise:
+
+3. If the install fails because you use Norton, exit Norton Sonar and Norton itself for 15 minutes, then do a direct download/install:
+
+Click on these links, one after the other. If you can Run from the web then click Run, and download/install each application. If you can only Save then Save them in a folder where you can find them afterwards, then select and Run, or doubleclick and Run.
+
+http://www.booktrakker.com/Applications/AppManager/BT_AppMgrSetup.exe
+
+BT_AppMgrSetup.exe
+
+www.booktrakker.com/Applications/Utilities/BT_UtilitiesSetup.exe
+
+BT_UtilitiesSetup.exe
+
+4. Once updated click the Fix Subscription to update, then click the Pay button at the bottom, confirm the Account Review message, get to our website to confirm amounts, click Next, click Pay with Amazon button to login to Amazon where you can change or update your cards then confirm subscription payment, all in one process. 
+
+You should get two emails from Amazon if your Renew Date is today or earlier, if your renew Date is in the future then you will only get the first email:
+
+Subject: You set up a payment method for BookTrakker
+Subject: BookTrakker has charged you $
+
+Thank you,
+
+Andy
+BookTrakker Sales and Support
+
+

@@ -1,0 +1,63 @@
+﻿@page "/GetAmzRefreshToken"
+@using System.Net.Http
+@using Microsoft.AspNetCore.Mvc
+@using BTOnlineBlazor.Pages
+@using BTOnlineBlazor.Data
+@using BTOnlineBlazor.App_Code
+@using BTOnlineBlazor.Models
+@using BTOnlineBlazor.Data.Migrations
+
+<h3>GetAmzRefreshToken</h3>
+
+@token
+
+@code {
+
+    [Parameter]
+    public string AccountID { get; set; } = string.Empty;
+
+    private string? token;
+
+    private BtDbContext _dbContext = _dbContextFactory.CreateDbContext();
+
+    public GetAmzRefreshToken()
+    {
+        
+    }
+
+    public GetAmzRefreshToken(string accountID)
+    {
+        AccountID = accountID;
+        //token = GetToken();
+    }
+
+    private async Task<string?> GetToken()
+    {
+        AccountManager accountManager = new AccountManager(_dbContext);
+
+        Guid accountId = default;
+
+
+        if(Guid.TryParse(AccountID, out accountId))
+        {
+            Account account = accountManager.VerifyAccount(accountId);
+
+            if(account != null)
+            {
+                ListingSiteAccount site = _dbContext.ListingSiteAccounts.First(l => l.AccountId.Equals(account.AccountId));
+                if(site != null)
+                { 
+                    return site.RefreshToken;
+                }
+            }
+        }
+
+        return default;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        token = await GetToken();
+    }
+
+}

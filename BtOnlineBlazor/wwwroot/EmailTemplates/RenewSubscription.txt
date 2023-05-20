@@ -1,0 +1,34 @@
+﻿Dear [Name],
+
+Thank you for being a loyal BookTrakker subscriber. Your subscription term expired with the last payment you made, so you need to resubscribe before your next Renew Date as posted in App Manager. If the Renew Date is earlier than this email then you need to resubscribe now. Under no circumstances will you ever pay for time not used. Each payment equals 30/31 days of subscription. 
+
+We use Amazon Payments for your monthly subscription fees. When we originally setup the subscription service we understood that Amazon only allows subscribers to contract for 12 equal payments per subscriptions. We have since learned otherwise, so we have updated our website payment confirmation page so you can select the term you want, between 1 to 5 years. When you have made 12 payments on your current subscription you have to go back through App Manager to Amazon Payments and effectively start the subscription over. 
+
+Open App Manager and click the "Pay easily with amazonpayments" button that appears in between the MWS Help and Submit buttons at the bottom. If there is no Amazon button then click where it should be then do CTRL-P on your keyboard. If it still does not appear then close and exit from App Manager, then reopen. 
+
+Click the OK button for the Account Review message box. Even though you may not have made any changes we still have to go through this process, until we add a Renew Subscription button to App Manager.  This will take you to the BookTrakker Account Subscription page.
+
+These instructions are published on the  BookTrakker Account Subscription page:
+
+Please select the Subscription Term you want (from 1 to 5 years) below the Total shown below. Amazon will show your total subscription value as the total per month times the number of years multiplied by 12.
+
+For example, if you choose a subscription amount of 10/mo for 2 years Amazon will show a total of $240 for the total amount.
+
+If you are currently on a discounted subscription plan your best term choice is one year as you will need to update your subscription once the plan discount expires.
+
+If the Total Monthly Subscription Charge shown below is correct please check the box below where it says:
+
+'I authorize the monthly charge shown above', then click the 'Pay easily with amazonpayments' button.
+
+Follow directions to initiate payment for BookTrakker by subscription.
+
+If you plan to pay via a Credit Card then when you get to our BookTrakker Account Subscription page, scroll down to the bottom, verify that the Total subscription Charge is correct, check the box, click the Amazon button. 
+
+This will take you to Amazon Payments. Login, select your card, click Continue, then Confirm the order.
+
+You may get three confirmation emails from Amazon: One to authorize payment, and one to confirm the next payment. This second email may not arrive until the next day as there may be a delay in processing the new card or the new amount. Payment thereafter is automatic, set to run two days before the Renew Date. If you renew your subscription before the old one runs out then you get a third email to cancel the old payment. If a subscription agreement is currently in effect, making a new subscription agreement automatically cancels the previous subscription agreement, and you get an email from Amazon to confirm this. 
+
+Thank you,
+
+The BookTrakker Development Team
+

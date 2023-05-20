@@ -1,0 +1,51 @@
+
+Top of Form
+TitlesDirect.com, Inc BookTrakker Subscription Agreement
+This is an agreement between you and TitlesDirect.com, Inc  
+Please read this agreement carefully. It governs your BookTrakker subscription, including any software, content, materials, or services that you receive through the subscription. By completing the purchase of a BookTrakker subscription, or by using or accessing a BookTrakker subscription, you confirm that you agree to this subscription agreement. If you don’t agree, do not purchase or activate a BookTrakker subscription or access any subscription benefits, which include any associated software. A BookTrakker subscription is intended to allow booksellers  to evaluate, test, and troubleshoot TitlesDirect.com, Inc software in accordance with the terms of the subscription.
+Please note that TitlesDirect.com, Inc does not provide warranties for the BookTrakker subscription. This agreement also limits TitlesDirect.com, Inc’s liability. The applicable warranty and liability terms are specified in sections 13 and 14.
+1. Who may use the subscription 
+In this agreement, “you” means the named, designated subscriber who has a valid subscription. Only one person or company may use or access a single subscription or any subscription benefits. If the subscriber is a company, the company must assign the subscription to one person within the company, and only that person may use or access the subscription or any subscription benefits.
+2. Access to software 
+The subscription provides you with access to software and associated benefits. When your subscription concludes, you will no longer have access to the software or any associated benefits and must discontinue your use of the software.
+3. Changes to the subscription benefits 
+TitlesDirect.com, Inc reserves the right to change the benefits available under the subscription at any time without any notice to you, such as which software titles are made available, the number of keys made available for a software title, or the number of machines on which you may install the software.
+4. Using the software and other benefits 
+a. Using software. Your use of the software is subject to the license terms provided with the software, such as click-through license terms, except for any changes to those terms that are provided in this agreement. 
+* You may not use the software if you do not have an active subscription.
+* You may install and use the software on your devices only to evaluate the software.
+* You may not use the software in a live operating environment, in a staging environment, or with data that has not been backed up.
+* You may not use the software for software development or in an application development environment.
+* The components of each software program are licensed as a single unit. You may not separate the components and install them on different devices.
+* You may not share, transfer, resell, or assign your subscription or the software.
+b. Other benefits. Other subscription benefits that do not include software may be subject to separate terms.
+5. Privacy and protection of personal information 
+To provide the subscription, TitlesDirect.com, Inc collects certain information about you. TitlesDirect.com, Inc may also automatically upload information about your computer, your use of the subscription, and subscription performance. TitlesDirect.com, Inc uses and protects that information as described in the TitlesDirect.com, Inc Online Privacy Statement (Link). In particular, TitlesDirect.com, Inc may access or disclose information about you, including the content of your communications, in order to (a) comply with the law or respond to lawful requests or legal process, (b) protect the rights or property of TitlesDirect.com, Inc or our customers, including the enforcement of our agreements or policies governing your use of the service, or (c) act on a good faith belief that such access or disclosure is necessary to protect the personal safety of TitlesDirect.com, Inc employees, customers, or the public.
+The subscription is provided through a private computer network that TitlesDirect.com, Inc operates for the benefit of itself and its customers. TitlesDirect.com, Inc retains the right to block or otherwise prevent delivery of any type of email or other communication to or from the service as part of our efforts to protect the service, protect our customers, or stop you from violating this agreement. The technology or other means TitlesDirect.com, Inc uses may hinder or otherwise affect your use of the subscription.
+6. Activation 
+The subscription requires activation. You are only permitted to activate the subscription in the geographic region in which you purchased the subscription. Some of the software may also require activation. You must activate the software within the geographic region in which you activated the subscription because program benefits and services are tied to the geographic region where the subscription is activated. You may use the software in any geographic region. For further information on geographic restrictions, visit: go.TitlesDirect.com, Inc.com/fwlink/?LinkId=141397.
+7. Product keys 
+The software may require a key to install or access it. Not all software is provided with the same number of keys. You are responsible for the use of any keys assigned to you. You may not resell, share, assign, or otherwise transfer keys. Key activity is monitored. TitlesDirect.com, Inc reserves the right to suspend or terminate your subscription, without any notice or obligation to you, if TitlesDirect.com, Inc detects suspicious activity related to keys or activations. TitlesDirect.com, Inc reserves the right to determine in its sole discretion whether an activity constitutes suspicious activity. Suspicious activity could include, but is not limited to, keys being activated in geographic regions that are different from the geographic location of the subscription activation or purchase, downloading of a large number of keys, and other similar activities. TitlesDirect.com, Inc may deactivate or otherwise limit your keys when your subscription ends. Deactivated keys will not be able to activate software.
+8. Ending the subscription 
+You may cancel your subscription at any time. Your subscription expires if you do not renew by paying the subscription fee prior to the expiration of the subscription period. TitlesDirect.com, Inc may suspend or terminate your subscription if TitlesDirect.com, Inc believes that you have failed to comply with any part of this agreement. If your subscription ends for any reason:
+o you must stop using the software and any benefits associated with the subscription, and
+o you must destroy all copies of the software in your possession.
+9. Support services 
+If support services are provided as a part of the subscription, such services may be subject to separate terms. Any support services offered as a part of the subscription must be used solely to support your use of the subscription.
+10. Entire agreement; assignment and transfer 
+This agreement, and the terms for software, supplements, updates, Internet-based services and support services that you use, are the entire agreement for the subscription. TitlesDirect.com, Inc may assign this agreement, in whole or in part, at any time without notice to you. You may not assign this agreement or transfer any rights to use the service.
+11. Applicable law 
+ . United States. If you activated the subscription in the United States, Washington state law governs the interpretation of this agreement and applies to claims for breach of it, regardless of conflict of laws principles. The laws of the state where you live govern all other claims, including claims under state consumer protection laws, unfair competition laws, and in tort.
+a. Outside the United States. If you live in any other country, the laws of that country apply.
+12. Effect of local laws 
+This agreement describes certain legal rights. You may have other rights under the laws of your country. This agreement does not change your rights under the laws of your country if the laws of your country do not permit it to do so.
+13. DISCLAIMER OF WARRANTY 
+TitlesDirect.com, Inc provides the subscription and the software available through it "as-is," "with all faults," and "as available." You bear the risk of using the subscription and the software. We do not guarantee the suitability, reliability, availability, or accuracy of the software or any other benefits available from the subscription, or that your access to the software will be uninterrupted, secure, or error-free. TitlesDirect.com, Inc gives no express warranties, guarantees, or conditions. We disclaim all warranties with regard to the subscription and the software, including any implied warranties (e.g., those of merchantability, fitness for a particular purpose, workmanlike effort, title and non-infringement). You may have additional consumer rights under your local laws that this agreement cannot change. This paragraph applies instead of any express warranty provided in the license terms that accompany any software. All such express warranties are excluded.
+14. LIABILITY LIMITATION 
+You can recover from TitlesDirect.com, Inc and its suppliers only direct damages up to U.S. $5.00. You cannot recover any other damages, including consequential, lost profits, special, indirect or incidental damages. This applies to anything related to this agreement, for example
+o anything related to the subscription, software, services, content (including code) on third party Internet sites, or third party programs; and
+o claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+It also applies even if TitlesDirect.com, Inc knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
+For questions about the BookTrakker Subscriptions Program, please see  http://www.booktrakker.com/Subscription.htm 
+
+

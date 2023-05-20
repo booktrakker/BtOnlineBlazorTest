@@ -1,0 +1,83 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Web
+@namespace BTOnlineBlazor.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="BTOnlineBlazor.styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Core/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Grid/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.ListView/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Input/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Calendar/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Menu/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.DataFilter/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.DateTimeEditors/styles.css" />
+</head>
+<body>
+    <component type="typeof(App)" render-mode="ServerPrerendered" />
+
+    <div id="blazor-error-ui">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="~/_content/C1.Blazor.Core/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Input/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Grid/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Menu/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Calendar/scripts.js"></script>
+    <script src="~/Scripts/arrow.js"></script>
+
+    <script>
+        window.triggerFileDownload = (fileName, url) => {
+            const anchorElement = document.createElement('a');
+            anchorElement.href = url;
+            anchorElement.download = fileName ?? '';
+            anchorElement.click();
+            anchorElement.remove();
+        }
+    </script>
+
+    <script>
+        window.clipboardCopy = {
+            copyText: function (text) {
+                navigator.clipboard.writeText(text).then(function () {
+                    alert("Copied to clipboard!");
+                })
+                    .catch(function (error) {
+                        alert(error);
+                    });
+            }
+        };
+    </script>
+
+    <script src="_framework/blazor.server.js"></script>
+
+    <script>
+        (function start() {
+            Blazor.start({
+                configureSignalR: builder => builder.withUrl('_blazor', 1 | 4) // WebSockets and Long Polling
+            });
+        })()
+    </script>
+
+    @Html.AntiForgeryToken()
+    <persist-component-state />
+</body>
+</html>

@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-BTOnlineBlazor-d52a2925-9430-42d6-bcfb-5620ccc0a962</UserSecretsId>
+    <FileVersion>1.0.1</FileVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="App_Code\AmazonFpsUtils.cs" />
+    <Compile Remove="BtLegacy\AmazonLAPconsent.cshtml.cs" />
+    <Compile Remove="Controllers\CompleteCheckoutController.cs" />
+    <Compile Remove="Data\AppManagerContext.cs" />
+    <Compile Remove="Data\BtDbContext - Copy.cs" />
+    <Compile Remove="Data\BtDbContextFactory.cs" />
+    <Compile Remove="Data\BtDbContextSmall.cs" />
+    <Compile Remove="Data\BtDbFactory.cs" />
+    <Compile Remove="Models\Db\App.cs" />
+    <Compile Remove="Pages\ErrorHandler\Create.cshtml.cs" />
+    <Compile Remove="Pages\ErrorHandler\Delete.cshtml.cs" />
+    <Compile Remove="Pages\ErrorHandler\Details.cshtml.cs" />
+    <Compile Remove="Pages\ErrorHandler\Edit.cshtml.cs" />
+    <Compile Remove="Pages\ErrorHandler\Index.cshtml.cs" />
+    <Compile Remove="Services\ElectPrimaryComputerService.cs" />
+    <Compile Remove="Services\ReRegisterComputerService.cs" />
+    <Compile Remove="Services\SetNetworkServerService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="BtLegacy\AmazonLAPconsent.cshtml" />
+    <Content Remove="Pages\AccountReview - Copy.razor" />
+    <Content Remove="Pages\AmazonLAPconsent - Copy.razor" />
+    <Content Remove="Pages\ErrorHandler\Create.cshtml" />
+    <Content Remove="Pages\ErrorHandler\Delete.cshtml" />
+    <Content Remove="Pages\ErrorHandler\Details.cshtml" />
+    <Content Remove="Pages\ErrorHandler\Edit.cshtml" />
+    <Content Remove="Pages\ErrorHandler\Index.cshtml" />
+    <Content Remove="Pages\GetAmzRefreshToken.razor" />
+    <Content Remove="Pages\SubscriptionConsent.razor" />
+    <Content Remove="wwwroot\Applications\AppManager\BT_AppMgrSetup.exe" />
+    <Content Remove="wwwroot\Scripts\AmazonPaymentsScripts.js" />
+    <Content Remove="wwwroot\Scripts\arrow - Copy.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\TestPage.ashx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.Pay.API.SDK" Version="2.7.0" />
+    <PackageReference Include="BlazorDownloadFile" Version="2.4.0.2" />
+    <PackageReference Include="C1.Blazor.DateTimeEditors" Version="6.0.20231.491" />
+    <PackageReference Include="C1.Blazor.Grid" Version="6.0.20231.491" />
+    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="1.0.20231.129" />
+    <PackageReference Include="EfCore.SchemaCompare" Version="7.0.0" />
+    <PackageReference Include="FileHelpers" Version="3.5.2" />
+    <PackageReference Include="MailKit" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Rewrite" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BtLegacy\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Keys\" />
+    <Folder Include="Templates\" />
+    <Folder Include="wwwroot\Applications\AppManager\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\EmailTemplates\BookTrakker Subscription Terms of Service.htm" />
+    <None Include="wwwroot\EmailTemplates\BookTrakker Subscription Terms of Service.txt" />
+    <None Include="wwwroot\EmailTemplates\CardDeclineEmail.txt" />
+    <None Include="wwwroot\EmailTemplates\PaymentMethodChange.txt" />
+    <None Include="wwwroot\EmailTemplates\RegKeyEmail.txt" />
+    <None Include="wwwroot\EmailTemplates\RenewSubscription.txt" />
+    <None Include="wwwroot\EmailTemplates\UpdateAppManagerEmail.txt" />
+    <None Include="wwwroot\EmailTemplates\WelcomeEmail.htm" />
+    <None Include="wwwroot\Images\BannerBooks Master.jpg" />
+    <None Include="wwwroot\Images\BannerBooks Master.png" />
+    <None Include="wwwroot\Images\BannerBooks.jpg" />
+    <None Include="wwwroot\Images\BannerBooks.png" />
+    <None Include="wwwroot\Images\Books.jpg" />
+    <None Include="wwwroot\Images\PayWithAmzPaymens.jpg" />
+    <None Include="wwwroot\Images\Thumbs.db" />
+    <None Include="wwwroot\Scripts\arrow.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OffAmazonPaymentsNotifications">
+      <HintPath>..\..\AmazonMWS\LoginAndPaySDK\bin\OffAmazonPaymentsNotifications.dll</HintPath>
+    </Reference>
+    <Reference Include="OffAmazonPaymentsService">
+      <HintPath>..\..\AmazonMWS\LoginAndPaySDK\bin\OffAmazonPaymentsService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

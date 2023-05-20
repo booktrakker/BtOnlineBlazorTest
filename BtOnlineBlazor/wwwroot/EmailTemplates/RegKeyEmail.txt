@@ -1,0 +1,12 @@
+﻿Dear BookTrakker User,
+
+Thank you for being a member of the BookTrakker Community.  In order to register your computer with the BookTrakker System Server you will need to enter the following Registration Code into the field named Registration Code on the form titled BookTrakker Online Computer Registration.  This typically appears automatically when the Computer has not yet been registered.
+
+Your registration code is:
+
+[RegCode]
+
+You will not need to keep this code once you have registered the computer.  If you need a new code at some point due to having to rebuild your computer or some other event then please return to the App Manager Download page and generate a new key.  You get there by logging in to your account at http://www.booktrakker.net which will direct you to the download page.
+
+Thank you,
+The BookTrakker Development Team

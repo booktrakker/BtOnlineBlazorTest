@@ -1,0 +1,75 @@
+﻿@page
+@model BTOnlineBlazor.Pages.ErrorHandler.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ErrorLog</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ErrorLog.ErrorId" />
+            <div class="form-group">
+                <label asp-for="ErrorLog.AppName" class="control-label"></label>
+                <input asp-for="ErrorLog.AppName" class="form-control" />
+                <span asp-validation-for="ErrorLog.AppName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.Message" class="control-label"></label>
+                <input asp-for="ErrorLog.Message" class="form-control" />
+                <span asp-validation-for="ErrorLog.Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.InnerException" class="control-label"></label>
+                <input asp-for="ErrorLog.InnerException" class="form-control" />
+                <span asp-validation-for="ErrorLog.InnerException" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.StackTrace" class="control-label"></label>
+                <input asp-for="ErrorLog.StackTrace" class="form-control" />
+                <span asp-validation-for="ErrorLog.StackTrace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.Source" class="control-label"></label>
+                <input asp-for="ErrorLog.Source" class="form-control" />
+                <span asp-validation-for="ErrorLog.Source" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.TargetSite" class="control-label"></label>
+                <input asp-for="ErrorLog.TargetSite" class="form-control" />
+                <span asp-validation-for="ErrorLog.TargetSite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.Comment" class="control-label"></label>
+                <input asp-for="ErrorLog.Comment" class="form-control" />
+                <span asp-validation-for="ErrorLog.Comment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.FileName" class="control-label"></label>
+                <input asp-for="ErrorLog.FileName" class="form-control" />
+                <span asp-validation-for="ErrorLog.FileName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ErrorLog.TimeStamp" class="control-label"></label>
+                <input asp-for="ErrorLog.TimeStamp" class="form-control" />
+                <span asp-validation-for="ErrorLog.TimeStamp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

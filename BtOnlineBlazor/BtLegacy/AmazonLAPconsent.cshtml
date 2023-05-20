@@ -1,0 +1,72 @@
+﻿@page "/AmazonLAPconsent"
+@using BTOnlineBlazor.App_Code
+@using C1.Blazor.Grid
+@using C1.DataCollection.EntityFrameworkCore
+@using System.Diagnostics;
+
+@inject BTOnlineBlazor.Services.ErrorReporterService errReport
+@model BTOnlineBlazor.Pages.AmazonLAPconsentModel
+
+<PageTitle>Account Review</PageTitle>
+
+<h1></h1>
+
+<h2>
+    Welcome to your BookTrakker Subscription Account page. Please verify that the account total below is correct. You will only need to do this once, unless you need update your subscription in the future, in which case you will just repeat the process.</p>
+    <p>Thank you,</p>
+    <p>BookTrakker Sales and Support</p>
+</h2>
+
+
+@if (Model.AccountDataList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+}
+
+
+
+@{
+    int Count = Model.Count;
+
+    AccountReviewListItem[]? Items = null!;
+
+    if (Count > 0)
+    {
+        Items = Model.AccountDataList.ToArray();
+    }
+
+    C1EntityFrameworkCoreVirtualDataCollection<AccountReviewListItem> c1Items = new C1EntityFrameworkCoreVirtualDataCollection<AccountReviewListItem>(Model.Context);
+
+    Console.WriteLine(c1Items.Count);
+
+}
+
+Count: @Count
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <th>AppName</th>
+        <th>ComputerName</th>
+        <th>Edition</th>
+        <th>Rate</th>
+    </tr>
+    @foreach (AccountReviewListItem item in Items)
+    {
+        <tr>
+            <td>@item.AppName</td>
+            <td>@item.ComputerName</td>
+            <td>@item.Edition</td>
+            <td>@item.Rate</td>
+        </tr>
+    }
+</table>
+
+<br />
+
+FlexGrid:
+
+<FlexGrid ItemsSource="Items"></FlexGrid>
+

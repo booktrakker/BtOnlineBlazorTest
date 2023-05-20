@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace BTOnlineBlazor.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="BTOnlineBlazor.styles.css" rel="stylesheet" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Core/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Grid/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.ListView/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Input/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Calendar/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.Menu/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.DataFilter/styles.css" />
+    <link rel="stylesheet" href="~/_content/C1.Blazor.DateTimeEditors/styles.css" />
+
+
+</head>
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/_content/C1.Blazor.Core/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Input/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Grid/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Menu/scripts.js"></script>
+    <script src="~/_content/C1.Blazor.Calendar/scripts.js"></script>
+
+     @*<div id="blazor-error-ui">
+        <environment include="Staging,Production">
+           An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>*@
+
+    <script src="_framework/blazor.server.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿@page "/SubscriptionConsent/{AccountID}"
+@layout NoMenuLayout
+@implements IDisposable
+@using BTOnlineBlazor
+@using BTOnlineBlazor.Data
+@using BTOnlineBlazor.Models
+@using BTOnlineBlazor.App_Code
+@using BTOnlineBlazor.Services
+@using Microsoft.AspNetCore.WebUtilities
+@using Amazon.Pay.API.WebStore.CheckoutSession;
+@using Amazon.Pay.API.WebStore;
+@using Amazon.Pay.API.WebStore.Types;
+@using Amazon.Pay.API.Types;
+
+
+
+@inject BTOnlineBlazor.Services.ErrorReporterService errReport
+@inject BTOnlineBlazor.Data.BtDbContext _context;
+@inject NavigationManager NavManager
+@inject IJSRuntime JS
+
+<h3>SubscriptionConsent</h3>
+
+Total Monthly Subscription Charge:
+<input type="text" value="@AccountTotal.ToString("C")" />
+
+
+
+
+@code {
+
+    //private BtDbContext _context = BtDbContextFactory.Instance.CreateContext();
+
+    [Parameter]
+    public string AccountID { get; set; } = null!;
+
+    private AmazonPaymentsService mAmazonPaymentsService = new AmazonPaymentsService();
+
+    private decimal mAccountTotal = 0;
+
+    protected Account? mAccount = null!;
+
+    public decimal AccountTotal { get => mAccountTotal; }
+
+    private bool mPaymentRegistered = false;
+
+    private WebStoreClient mClient = null!;
+
+    private async Task Initialize()
+    {
+        mClient = mAmazonPaymentsService.InitiateClient();
+
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("AccountID", out var _code))
+        {
+            AccountID = Convert.ToString(_code);
+        }
+
+        mAccount = AccountManagerService.GetAccount(AccountID, _context, errReport);
+
+        if (mAccount is not null)
+        {
+            mAccountTotal = AccountManagerService.GetAccountTotal(AccountID, _context, errReport);
+        }
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await Initialize();
+            mPaymentRegistered = mAmazonPaymentsService.ProcessRegistration(AccountID, AccountTotal, mClient, errReport);
+
+            if (mPaymentRegistered)
+            {
+                
+            }
+            await base.OnInitializedAsync();
+        }
+        catch (Exception ex)
+        {
+            errReport.LogErr(ex);
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        
+
+    }
+
+    public void Dispose()
+    {
+        Console.WriteLine("Bink");
+    }
+
+}

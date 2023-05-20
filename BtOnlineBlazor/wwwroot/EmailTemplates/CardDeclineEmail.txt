@@ -1,0 +1,21 @@
+﻿Dear [Name],
+
+Your payment did not process. Your Renew Date is [RenewDate], BookTrakker will stop working after [EndDate]
+
+The card may be failing because of insufficient funds, you can fix this by supplying the credit card company with enough funds for the charge to process.
+
+If the card has expired or you changed cards then you need to reprocess payment through App Manager. 
+
+Before you do that you may need to go to
+
+	https://payments.amazon.com/CCList 
+
+to update your card, or click the green Update Payment Card button at the bottom right corner in App Manager.
+
+Open App Manager and click the "Pay" button that appears to the left of the Blue Submit buttons. Confirm the subscription amount is correct, click OK. Confirm again, click [button]. Login to Amazon Payments. Select or update your payment method, check the box to confirm amount, click Activate Subscription button.
+
+Thank you,
+
+Andy
+BookTrakker Sales and Support
+
